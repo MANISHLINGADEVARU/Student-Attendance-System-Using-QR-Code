@@ -1,5 +1,66 @@
 # Student-Attendance-System-Using-QR-Code
 
+**System Overview**
+A digital attendance management system that leverages QR code technology to:
+
+ Streamline attendance tracking
+ Replace manual roll calls
+ Monitor subject-wise attendance
+ Provide real-time dashboards for administrators
+ Enable student self-reporting through a dedicated portal
+ 
+**Key Use Cases**
+**1. Administrator Dashboard**
+Actors: Instructors, Faculty Coordinators, Administrators
+
+Main Dashboard: View overall attendance statistics and system status
+Monitor attendance across multiple classes/subjects
+Generate attendance reports
+Manage student records and QR code assignments
+**2. Subject-Wise Attendance Monitoring**
+Actors: Instructors, Department Heads
+
+Track attendance for specific courses/subjects
+View attendance trends per student
+Identify attendance patterns and risks
+Generate subject-specific reports
+Monitor class participation
+**3. Student Portal - Mark Attendance**
+Actors: Students
+
+Scan QR codes to mark their attendance
+View personal attendance records
+Check attendance status for current/past sessions
+Real-time confirmation of attendance marking
+**4. QR Code Management**
+Actors: Administrators, Instructors
+
+Generate unique QR codes for each class session
+Associate QR codes with specific classes/subjects
+Manage QR code validity and expiration
+Configure QR code generation parameters
+**5. Reporting & Analytics**
+Actors: Administrators, Faculty, Management
+
+ Generate attendance reports (daily, weekly, monthly)
+ Export attendance data
+ Identify students with low attendance
+ Track attendance trends over time
+**Technical Architecture**
+**Primary Language:** HTML (Frontend), with Java backend capability (qr-attendance-java folder)
+
+**Key Components:**
+
+**Frontend:** HTML/CSS/JavaScript for UI
+**Backend:** Java-based services (evident from qr-attendance-java directory)
+**QR Code Engine:** QR code generation and scanning
+**Database:** Student, class, and attendance records
+**Authentication:** User login and role-based access
+
+# Implementation Roadmap
+<img width="463" height="259" alt="image" src="https://github.com/user-attachments/assets/fb94bf49-7257-44ef-b196-f74f5e456d3e" />
+
+
 # SYSTEM ARCHITECTURE
  
  ┌─────────────────────────────────────────────────────────────────┐
