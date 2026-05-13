@@ -1,6 +1,7 @@
 # Student-Attendance-System-Using-QR-Code
 
 # SYSTEM ARCHITECTURE
+
  ┌─────────────────────────────────────────────────────────────────┐
  │                     STUDENT ATTENDANCE SYSTEM                   │
  └─────────────────────────────────────────────────────────────────┘
