@@ -232,7 +232,8 @@ Deliverable: Full-fledged production system
      │     CDN / Cloud Provider          │
      │ (AWS/Azure/GCP/DigitalOcean)      │
      └─────────────────────────────────────┘
-SECURITY CONSIDERATIONS
+     
+# SECURITY CONSIDERATIONS
 ✅ Authentication: JWT with refresh tokens
 ✅ Authorization: Role-based access control (RBAC)
 ✅ Encryption: SSL/TLS for data in transit, bcrypt for passwords
