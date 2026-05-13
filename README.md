@@ -1,7 +1,7 @@
 # Student-Attendance-System-Using-QR-Code
 
 # SYSTEM ARCHITECTURE
- code
+ 
  ┌─────────────────────────────────────────────────────────────────┐
  │                     STUDENT ATTENDANCE SYSTEM                   │
  └─────────────────────────────────────────────────────────────────┘
@@ -81,7 +81,7 @@ Frontend/
     └── utils.js                # Utility functions 
 
 **2. BACKEND LAYER (Java Spring Boot)**
-code
+
 src/main/java/com/attendance/
 ├── config/
 │   ├── SecurityConfig.java
@@ -210,28 +210,28 @@ Deliverable: Full-fledged production system
  Configure database backups
  Set up production deployment
 # DEPLOYMENT ARCHITECTURE
-Code
-┌────────────────────────────────────────────────────────────┐
-│                    DOCKER CONTAINERS                        │
-├────────────────────────────────────────────────────────────┤
-│  ┌──────────────┐ ┌──────────────┐ ┌────────────────────┐  │
-│  │   Frontend   │ │ Spring Boot  │ │   PostgreSQL       │  │
-│  │  (Nginx)     │ │  (Port 8080) │ │   (Port 5432)      │  │
-│  └──────────────┘ └──────────────┘ └────────────────────┘  │
-└────────────────────────────────────────────────────────────┘
-                          │
-            ┌──────────��──┴──────────────┐
-            │                            │
-     ┌──────▼────────┐         ┌────────▼──────┐
-     │ Load Balancer │         │  Redis Cache  │
-     │  (Reverse     │         │  (Optional)   │
-     │   Proxy)      │         └───────────────┘
-     └──────┬────────┘
-            │
-     ┌──────▼────────────────────────────┐
-     │     CDN / Cloud Provider          │
-     │ (AWS/Azure/GCP/DigitalOcean)      │
-     └─────────────────────────────────────┘
+
+ ┌────────────────────────────────────────────────────────────┐
+ │                    DOCKER CONTAINERS                       │
+ ├────────────────────────────────────────────────────────────┤
+ │  ┌──────────────┐ ┌──────────────┐ ┌────────────────────┐  │
+ │  │   Frontend   │ │ Spring Boot  │ │   PostgreSQL       │  │
+ │  │  (Nginx)     │ │  (Port 8080) │ │   (Port 5432)      │  │
+ │  └──────────────┘ └──────────────┘ └────────────────────┘  │
+ └────────────────────────────────────────────────────────────┘
+                             │
+             ┌──────────��──┴──────────┐
+             │                           │
+      ┌──────▼────────┐         ┌────────▼──────┐
+      │ Load Balancer │         │  Redis Cache  │
+      │  (Reverse     │         │  (Optional)   │
+      │   Proxy)      │         └───────────────┘
+      └──────┬────────┘
+             │
+      ┌──────▼────────────────────────────┐
+      │     CDN / Cloud Provider          │
+      │ (AWS/Azure/GCP/DigitalOcean)      │
+      └───────────────────────────────────┘
 SECURITY CONSIDERATIONS
 ✅ Authentication: JWT with refresh tokens
 ✅ Authorization: Role-based access control (RBAC)
