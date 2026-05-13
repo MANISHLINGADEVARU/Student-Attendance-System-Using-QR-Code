@@ -77,7 +77,7 @@ Frontend/
     ├── qr-scanner.js           # QR scanning functionality
     ├── api-client.js           # API communication
     ├── auth.js                 # Authentication handling
-    └── utils.js                # Utility functions
+    └── utils.js                # Utility functions 
 
 **2. BACKEND LAYER (Java Spring Boot)**
 src/main/java/com/attendance/
