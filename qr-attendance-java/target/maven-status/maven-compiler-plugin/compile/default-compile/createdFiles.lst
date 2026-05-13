@@ -1,0 +1,9 @@
+com\example\qrattendance\model\Student.class
+com\example\qrattendance\config\DataInitializer.class
+com\example\qrattendance\model\AttendanceSession.class
+com\example\qrattendance\model\AttendanceRecord.class
+com\example\qrattendance\QrAttendanceApplication.class
+com\example\qrattendance\repository\AttendanceRecordRepository.class
+com\example\qrattendance\controller\AttendanceController.class
+com\example\qrattendance\repository\AttendanceSessionRepository.class
+com\example\qrattendance\repository\StudentRepository.class
