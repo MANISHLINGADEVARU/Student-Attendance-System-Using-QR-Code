@@ -311,6 +311,15 @@ Deliverable: Full-fledged production system
 
 ✅ CSRF Protection: Spring Security CSRF tokens
 
+# Commands to run the project
+.\mvnw.cmd spring-boot:run
+java -version 2>&1; where java
+Get-ChildItem "C:\Program Files\Java" -ErrorAction SilentlyContinue; Get-ChildItem "C:\Program Files\Eclipse Adoptium" -ErrorAction SilentlyContinue; Get-ChildItem "C:\Program Files\Microsoft" -Filter "*jdk*" -ErrorAction SilentlyContinue; Get-ChildItem "C:\Users\manis\.jdks" -ErrorAction SilentlyContinue; Get-ChildItem "$env:LOCALAPPDATA\Programs" -Filter "*java*" -ErrorAction SilentlyContinue
+Get-ItemProperty -Path "HKLM:\SOFTWARE\JavaSoft\JDK" -ErrorAction SilentlyContinue; Get-ItemProperty -Path "HKLM:\SOFTWARE\JavaSoft\Java Development Kit" -ErrorAction SilentlyContinue; [Environment]::GetEnvironmentVariable("JAVA_HOME","Machine"); [Environment]::GetEnvironmentVariable("JAVA_HOME","User")
+Get-ChildItem -Path "C:\" -Recurse -Depth 4 -Filter "java.exe" -ErrorAction SilentlyContinue | Select-Object FullName -First 10
+Get-ChildItem -Path "$env:APPDATA", "$env:LOCALAPPDATA", "$env:USERPROFILE" -Recurse -Depth 5 -Filter "java.exe" -ErrorAction SilentlyContinue | Select-Object FullName -First 5
+winget install --id EclipseAdoptium.Temurin.17.JDK --accept-source-agreements --accept-package-agreements --silent 2>&1
+$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-17.0.19.10-hotspot"; $env:PATH = "$env:JAVA_HOME\bin;$env:PATH"; java -version 2>&1; javac -version 2>&1
 
 MAIN DASHBOARD OF THE STUDENT ATTENDANCE SYSTEM
 <img width="1365" height="717" alt="image" src="https://github.com/user-attachments/assets/fad9d601-5b6a-4b01-85ec-9a9d36192d9c" />
